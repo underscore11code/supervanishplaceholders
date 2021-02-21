@@ -48,7 +48,7 @@ public class SuperVanishPlaceholders extends PlaceholderExpansion {
             return String.valueOf(Bukkit.getOnlinePlayers().size() - vanishedList.size());
         }
 
-        if (p == null) return null;
+        if (p == null) return "";
 
         if (params.equalsIgnoreCase("vanishstate")) {
             if (vanishedList.contains(p.getUniqueId())) return "&b[V]";
@@ -59,6 +59,6 @@ public class SuperVanishPlaceholders extends PlaceholderExpansion {
             if (vanishedList.contains(p.getUniqueId())) return "&b[Vanished]";
             else return "";
         }
-        return null;
+        return "";
     }
 }
